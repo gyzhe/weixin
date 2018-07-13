@@ -1,0 +1,22 @@
+/* pages/balance/balance.wxss */
+@import '../address/address.wxss';
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #ccc;
+  padding:20rpx;
+  box-sizing: border-box;
+}
+.weui-btn {
+  margin: 0;
+}
+.subtn{
+  background-color:#3ebf3d;
+  color: #fff; 
+  height: 64rpx;
+  line-height: 64rpx;
+  display: inline-block;
+  float: right;
+}

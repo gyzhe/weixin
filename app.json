@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/page/pagetable/pagetable",
+    "pages/page/pagetables/pagetables",
+    "pages/page/pagetableone/pagetableone",
+    "pages/page/pagetabletwo/pagetabletwo",
+    "pages/page/pagetablethree/pagetablethree",
+    "pages/page/pagetablefo/pagetablefo",
+    
+    "pages/sort/sort",
+    "pages/is/is",
+    "pages/car/car",
+    "pages/my/my",
+    "pages/collect/collect",
+    "pages/address/address",
+    "pages/getaddress/getaddress",
+     "pages/balance/balance"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#403d3d",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor":"#f6f7f8",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/iconfont-home.png",
+      "selectedIconPath": "images/iconfont-home-active.png"
+    },
+    {
+      "pagePath": "pages/sort/sort",
+      "text": "分类",
+      "iconPath": "images/iconfont-list.png",
+      "selectedIconPath": "images/iconfont-list-active.png"
+    },
+    {
+      "pagePath": "pages/car/car",
+      "text": "购物车",
+      "iconPath": "images/iconfont-cart.png",
+      "selectedIconPath": "images/iconfont-cart-active.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/iconfont-user.png",
+      "selectedIconPath": "images/iconfont-user-active.png"
+    }
+    ]
+  }
+}

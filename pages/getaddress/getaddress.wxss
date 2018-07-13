@@ -1,0 +1,25 @@
+/* pages/getaddress/getaddress.wxss */
+/* 需要输入的信息 */
+.get-block{
+  padding: 20rpx;
+   background-color: #fff;
+}
+.get-list{
+  height: 130rpx;
+  width: 100%;
+  line-height: 130rpx;
+  border-top: 1rpx solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+}
+.get-title{
+  color: #666;
+}
+.get-input input{
+  height: 3.4rem;
+}
+/* 确认按钮 */
+.get-btn{
+  margin-top: 20rpx;
+  padding: 20rpx;
+}

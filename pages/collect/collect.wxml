@@ -1,0 +1,17 @@
+<view class='coll-box'>
+    <block  wx:for='{{list}}' wx:key='{{index}}'>
+        <view >
+            <navigator>
+           <view class='coll-li'>
+            <image src='{{item.img}}'></image>
+            <view class='coll-text'>
+                 <text>{{item.name}}</text>
+                 <text>￥：{{item.price}}</text>
+                  <button catchtap='clear'  class='coll-btn'  data-index='{{index}}'>删</button>
+            </view>
+        </view>
+      </navigator>  
+     
+        </view>
+    </block>
+</view>

@@ -1,0 +1,36 @@
+<!-- 人信息 -->
+<view class='ad-box'>
+   <view  class='ad-list' wx:for="{{list}}">
+       <view class='ad-inner' style='{{item.txtStyle}}' data-index="{{index}}">
+           <view class='ad-text'>
+              <text>{{item.name}}</text>
+              <text>\n电话：{{item.phone}}</text>
+              <text>\n{{item.add}}</text>
+           </view>
+       </view>
+           <button class='ad-del' data-index="{{index}}"  bindtap="delbtn">删除</button> 
+    </view>      
+</view>
+<!-- 商品信息 -->
+ <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">付款金额</view>
+                    <view class="weui-form-preview__value_in-hd">¥240.00</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">商品</view>
+                    <view class="weui-form-preview__value">饭桶张 </view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">操作</navigator>
+            </view>
+        </view>
+        <!-- 底部 -->
+<view class='footer'>
+   <text>合计：￥56.00</text>
+   <button class='subtn'>提交订单</button>
+</view>

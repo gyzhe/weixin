@@ -1,0 +1,58 @@
+<!-- 购物商品列表 -->
+<view wx:if="{{haslist}}">
+<!-- 商品列表 -->
+<view class='ad-box'>
+   <view  class='ad-list' wx:for="{{list}}" wx:key="{{index}}">
+       <view class='ad-inner' bindtouchstart='touchS' bindtouchmove='touchM' bindtouchend='touchE'
+       style='{{item.txtStyle}}' data-index="{{index}}">
+          <!-- 复选框 -->
+           <icon wx:if="{{item.selected}}" type="circle" size="23" data-index="{{index}}" bindtap='changeicon'></icon>
+           <icon wx:else type="success" size="23" data-index="{{index}}" bindtap='changeicon'></icon>
+           <!-- 图片 -->
+           <image src='{{item.img}}'></image>
+           <!-- 文字 -->
+           <view class='article'>
+              <text>{{item.name}}</text>
+              <text style='color:red'>\n￥{{item.price}}</text>
+           </view>
+            <!-- 数量变化按钮 -->
+              <view class='car-btn'>
+                  <text data-index="{{index}}" bindtap='delcount'>-</text>
+                  <text>{{item.num}}</text>
+                  <text bindtap='addcount' data-index="{{index}}">+</text>
+              </view>
+       </view>
+        
+            <button class='ad-del' data-index="{{index}}"  bindtap="delbtn">删除</button> 
+        
+           
+    </view>
+      
+</view>
+<!-- 全选按钮 -->
+<view class='car-foot'>
+    <view>
+        <icon wx:if="{{selectAllStatus}}" type="circle" size="23"  bindtap='changAllicon'></icon>
+        <icon wx:else type="success" size="23"  bindtap='changAllicon'></icon>
+       <text>全选</text>
+    </view>
+    <view>
+       <text>￥{{allprice}}</text>
+    </view>
+    <view>
+       <navigator url='../balance/balance'>
+        <button class='subtn' >结算</button>
+         </navigator>
+    </view>
+</view>
+</view>
+
+
+<view wx:else>
+   <view class='shopcar'>
+       <image src="/images/cart-null.png"></image>    
+   </view>
+   <view class='shopcar-btn'>
+       <button class="weui-btn" type="primary" bindtap='toindex'>去购物</button>
+   </view>
+</view>

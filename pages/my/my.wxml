@@ -1,0 +1,28 @@
+<view class="mine-box">
+<!-- 引入sign -->
+    <import src="/template/sign.wxml"/>
+    <template is="signin" data="{{...item}}"/>
+    <!-- 用户信息 -->
+    <view class="user">
+        <view class="user-pic"><image src="{{userInfo.avatarUrl}}"></image></view>
+        <view class="user-name">{{userInfo.nickName}}</view>    
+    </view>
+<!-- 列表 -->
+ <view class="weui-panel">
+           <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg" wx:for="{{carList}}">
+                    <view class="weui-cells weui-cells_in-small-appmsg"  >
+                        <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="{{item.icon}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>{{item.text}}</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>    
+                    </view>
+                </view>
+            </view>
+        </view>
+<!-- 按钮-->
+<button class="weui-btn" type="primary" bindtap="quit">退出登录</button>
+</view>

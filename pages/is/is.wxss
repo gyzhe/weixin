@@ -1,0 +1,26 @@
+/* nvbar */
+.pro-pic{
+   font-size: medium;
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 2%;
+  width: 48%;
+  background-color: #fff;
+}
+.pro-pic navigator{
+  display: block;
+  width: 100%;
+}
+.pro-pic navigator image{
+  display: flex;
+  width: 100%; 
+}
+.pro-pic navigator .pro-price{
+  margin: 0 2%;
+}
+.pro-pic navigator .pro-price text{
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;/*文字隐藏后添加省略号 */
+  white-space:nowrap; 
+}

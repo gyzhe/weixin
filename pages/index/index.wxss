@@ -1,0 +1,62 @@
+
+/* 轮播图 */
+.slider{
+    width: 100%;
+    height: 380rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+/* 图文信息 */
+.grilds{
+  margin: 10rpx;
+}
+.grilds .pic{
+  display: inline-block;
+  width: 33.33%;
+ }
+.pic image{
+  width: 100%;
+  height: 260rpx;
+}
+/* 推荐商品 */
+.pro-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  height: 60rpx;
+  background-color: #fff;
+}
+.pro-twobox{
+  font-size: medium;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  padding-right: 10rpx;
+}
+.pro-pic{
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 2%;
+  width: 48%;
+  background-color: #fff;
+}
+.pro-pic navigator{
+  display: block;
+  width: 100%;
+}
+.pro-pic navigator image{
+  display: flex;
+  width: 100%; 
+}
+.pro-pic navigator .pro-price{
+  margin: 0 2%;
+}
+.pro-pic navigator .pro-price text{
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;/*文字隐藏后添加省略号 */
+  white-space:nowrap; 
+}

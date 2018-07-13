@@ -1,0 +1,24 @@
+<!-- 主盒子 -->
+<view class='sortmain'>
+    <!-- 左侧盒子 -->
+    <view class='sort_left'>
+        <block wx:for="{{lists}}">
+            <view class=" {{curNav == item.id ? 'active' : ''}}"  bindtap='switch' data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+        </block>
+    </view>
+    <!-- 右侧盒子 -->
+    <view class='sort_right'>
+        <view wx:if="{{lists[curIndex].ishavechild}}"> 
+            <block wx:for="{{lists[curIndex].children}}">
+                <view class='sort_rightview'>
+                   <navigator url='{{item.url}}'>
+                      <image src='{{item.pic}}'></image>
+                      <text>{{item.text}}</text>
+                   </navigator>
+                </view>
+            </block>
+        </view>
+         <!-- 如果没有数据，则显示 -->
+      <view wx:else>该分类无数据</view>
+    </view>   
+</view>

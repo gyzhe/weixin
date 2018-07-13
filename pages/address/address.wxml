@@ -1,0 +1,20 @@
+<!-- 收货地址 -->
+<view class='ad-box'>
+   <view  class='ad-list' wx:for="{{list}}" wx:key="{{index}}">
+       <view class='ad-inner' bindtouchstart='touchS' bindtouchmove='touchM' bindtouchend='touchE'
+       style='{{item.txtStyle}}' data-index="{{index}}">
+           <view class='ad-text'>
+              <text>{{item.name}}</text>
+              <text>\n电话：{{item.phone}}</text>
+              <text>\n{{item.add}}</text>
+           </view>
+           <image src='/images/modify.png'></image>
+       </view>
+           <button class='ad-del' data-index="{{index}}"  bindtap="delbtn">删除</button> 
+    </view>
+      
+</view>
+<!-- 新增收货地址 -->
+<view class='ad-btn' bindtap='toaddress'>
+   <button class="weui-btn" type="primary" >新增收货地址</button>
+</view>

@@ -1,0 +1,58 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"
+  class="slider">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 图文信息 -->
+<view class='grilds'>
+    <view class='pic'>
+        <navigator url="../is/is">
+            <image src="/images/cloth1.jpg" mode='aspectFill'></image>
+        </navigator>
+    </view>
+    <view class='pic'>
+        <navigator url="../is/is">
+           <image src="/images/cloth2.jpg"  mode='aspectFill'></image>
+        </navigator>
+    </view>
+    <view class='pic'>
+        <navigator  url="../is/is">
+           <image src="/images/cloth3.jpg"></image>
+        </navigator>
+    </view>
+    <view class='pic'>
+        <navigator  url="../is/is">
+           <image src="/images/cloth4.jpg"></image>
+         </navigator>
+    </view>
+    <view class='pic'>
+        <navigator  url="../is/is">
+            <image src="/images/cloth5.jpg"></image>
+        </navigator>
+    </view>
+    <view class='pic'>
+        <navigator  url="../is/is">
+           <image src="/images/cloth6.jpg"></image>
+        </navigator>
+    </view>
+</view>
+<!-- 推荐商品 -->
+<view class="pro">
+    <view class='pro-box'>推荐商品</view>
+    <view class='pro-twobox'>
+     <view class='pro-pic' wx:for="{{list}}">
+       <navigator url="{{item.url}}">
+           <image src='{{item.pic}}' ></image>
+           <view class='pro-price'>
+              <text>{{item.text}}</text>
+              <text decode="{{true}}">￥{{item.price}}  &nbsp;&nbsp;&nbsp;销量{{item.num}}件</text>
+           </view>
+       </navigator>
+     </view>
+    </view>
+</view>

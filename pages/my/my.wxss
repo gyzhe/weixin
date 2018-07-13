@@ -1,0 +1,46 @@
+/* pages/my/my.wxss */
+/* 用户信息 */
+.user{
+  height: 500rpx;
+  width: 100%;
+  background-color:#3ebf3d;
+}
+.user-pic{
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-pic image{
+  height: 160rpx;
+  width: 160rpx;
+  align-self: center;
+  border-radius: 20%;
+}
+.user-name{
+  display: flex;
+  justify-content: center;
+  align-self: center; 
+  margin-top: -80rpx;
+}
+/* 登录样式 */
+label{
+  display: flex;
+  flex-direction: column
+}
+label view{
+  display: flex;
+  margin-top: 20rpx;
+}
+label view input{
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+/* 列表 */
+.weui-panel{
+  margin: 20rpx 0;
+}
+/* 按钮 */
+.weui-btn{
+  margin: 0 20rpx;
+}

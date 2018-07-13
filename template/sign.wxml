@@ -1,0 +1,16 @@
+<template name="signin">
+  <view>
+    <modal title="请登录"  cancel-text="微信登录" hidden="{{signinHidden}}" bindconfirm="modalconfirm" bindcancel="modalcancel">
+      <label>
+        <view class="section">
+          <text>账号:</text>
+          <input bindinput="saveusername"  value="{{userlocal.nickName}}" placeholder='微信可直接登录'/>
+        </view>
+        <view class="section">
+          <text>密码:</text>
+          <input bindinput="saveuserpwd" password="true" value="{{userlocal.nickPwd}}" placeholder='无需密码'/>
+        </view>
+      </label>
+    </modal>
+  </view>
+</template>

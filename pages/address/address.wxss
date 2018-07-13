@@ -1,0 +1,57 @@
+/* pages/address/address.wxss */
+page{
+  margin-bottom: 100rpx;
+}
+/* 收货地址 */
+.ad-list{
+  height: 240rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.ad-inner{
+  z-index: 1;
+  background-color: #fff;
+  height: 240rpx;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.ad-text{
+  margin-top: 10%;
+  width: 70%;
+}
+.ad-text text{
+  margin-top: -9%;
+  display:block;
+  overflow: hidden;
+  text-overflow:ellipsis;/*文字隐藏后添加省略号 */
+  white-space:nowrap; 
+}
+.ad-inner image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 8%;
+}
+/* 删除按钮 */
+.ad-del{
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  height: 240rpx;
+  width: 200rpx;
+  background-color: #1aad19;
+  text-align: center;
+  line-height: 240rpx;
+  color: #fff;
+}
+/* 新增收货地址 */
+.ad-btn{
+  height: 100rpx;
+  padding: 16rpx;
+  position:fixed;
+  bottom: 0;
+}
+.ad-btn .weui-btn{
+  padding: 0 260rpx;
+}

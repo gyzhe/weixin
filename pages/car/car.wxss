@@ -1,0 +1,88 @@
+page{
+  margin-bottom: 90rpx;
+}
+/* 商品列表 */
+.ad-list{
+  height: 200rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.ad-inner{
+  z-index: 1;
+  background-color: #fff;
+  height: 200rpx;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.ad-inner icon{
+  margin-top:80rpx;
+  margin-left: 46rpx;
+}
+.ad-inner image{
+   width: 180rpx;
+   height: 180rpx;
+   margin: 10rpx;
+}
+.ad-inner .article text{
+  display: block;
+  width: 130rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ad-inner .car-btn{
+  margin: 38rpx;
+}
+.ad-inner .car-btn text{
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-right: -1px;
+  line-height: 80rpx;
+  text-align: center;
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 全选按钮 */
+.car-foot{
+   height: 90rpx;
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   background-color: #fff;
+   border-top: 1px solid #ccc;
+   display: flex;
+   justify-content: space-around;
+}
+.car-foot view{
+  margin-top: 20rpx;
+}
+/* 删除按钮 */
+.ad-del{
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  height: 200rpx;
+  width: 200rpx;
+  background-color: #1aad19;
+  text-align: center;
+  line-height: 200rpx;
+  color: #fff;
+}
+.shopcar{
+  display: flex;
+  justify-content: center;
+}
+.shopcar-btn{
+  padding: 0 30%;
+}
+/* 结算 */
+.subtn{
+  background-color:#3ebf3d;
+  color: #fff; 
+  height: 64rpx;
+  line-height: 64rpx;
+}

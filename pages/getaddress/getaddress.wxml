@@ -1,0 +1,39 @@
+<form bindsubmit='formSumbit'>
+   <!-- 需要输入的信息 -->
+   <view class='get-block'>
+        <view class='get-list'>
+            <view class='get-title'>收货人姓名：</view>
+            <view class='get-input'>
+                <input type='text' maxlength='11' value='' name='getname'></input>
+            </view>
+        </view>
+         <view class='get-list'>
+             <view class='get-title'>联系电话：</view>
+            <view class='get-input'>
+                <input type='number' maxlength='11' value='' name='gettel'></input>
+            </view>
+        </view>
+         <view class='get-list'>
+             <view class='get-title'>所在地区：</view>
+            <view class='get-input'>
+                 <picker bindchange='bindPickerCity' mode='region' value='{{region}}'>
+                     <input value='{{region[0]}},{{region[1]}},{{region[2]}}' name='getadds'>
+                     </input>
+                  </picker>       
+            </view>
+        </view>
+         <view class='get-list'>
+             <view class='get-title'>详细地址：</view>
+            <view class='get-input'>
+                <input type='text'  name='getadd'></input>
+            </view>
+        </view>
+   
+   </view>
+   <!-- 确认按钮 -->
+    <view class='get-btn'>
+       <button class="weui-btn" type="primary" form-type='submit'>确认</button>
+       <button class="weui-btn" type="primary" form-type='reset'>清空</button>
+    </view>
+</form>
+
